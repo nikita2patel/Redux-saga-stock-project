@@ -1,0 +1,61 @@
+
+
+#box1 {
+    padding: 30px;
+    /* border: solid 1px green */
+    /* box-shadow: 10px 10px 5px 12px black; */
+    box-shadow: 5px 5px 2px 2px black;
+}
+
+/* .ishare{
+   width: 20px;
+   margin-left: 30px;
+   height: 30px;
+   padding-top: 40px;
+}
+ .ishares{
+    display: flex;
+    margin-left: 8%;
+   
+}  */
+.graph {
+	width: 100px;
+	border: 1px solid #aeaeae;
+	background-color: #eaeaea;
+}
+/* Start of "Micro clearfix" */
+        
+        .cf { zoom: 1; }
+        .cf:before,
+        .cf:after { content: ""; display: table; }
+        .cf:after { clear: both; }
+        
+        /* End of "Micro clearfix" */
+
+
+.ext {
+	width: 50px;
+padding: 2px 0;
+}
+.ext.neg {
+border-right: 1px solid black;
+}
+.ext.pos {
+margin-left: 50px;
+border-left: 1px solid black;
+}
+
+.ext.neg .bar {
+  float: right;
+  margin-bottom: 5px;
+  background-color: red;
+}
+
+.ext.pos .bar {
+
+  background-color: green;
+}
+
+.bar {
+    height: 5px;
+}

@@ -1,0 +1,174 @@
+.portfolio-wrapper{
+  background-color: #f6f6f6;
+}
+.left-container{
+  justify-content: space-between;
+}
+.right-container{
+  justify-content: space-between;
+}
+.w-20{
+  width: 20%;
+}
+.w-80{
+  width: 80%;
+}
+.fund-type p{
+color: #6c757d;
+font-size: 13px;
+line-height: 16px;
+}
+.fund-type p span{
+  color: #61ddd4;
+  font-size: 18px;
+  margin-left: 3px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.share-type p{
+  margin-bottom: 0;
+  /* color: #71bb66; */
+  line-height: 20px;
+}
+.company-name{
+  color: #4c9542;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.script-name{
+  font-weight: 600;
+}
+.stock-detail p{
+  margin-bottom: 0;
+}
+.stock-detail svg{
+  margin-right: 5px;
+}
+.stock-detail span{
+  font-weight: 500;
+  color: #000000;
+}
+.progressbar{
+  max-height: 8px;
+}
+.progressbar .progress-bar{
+  background-color: #00bd59 
+}
+.portfolio-wrapper .list-group-item{
+  border: 1px solid #ddd !important;
+  border-radius: 5px;
+}
+.portfolio-wrapper .card{
+  border: 1px solid #ddd !important;
+  border-radius: 5px;
+}
+input[type="range"].positive::-webkit-slider-thumb {
+  background: green !important;
+  cursor: square;
+}
+
+input[type="range"].negative::-webkit-slider-thumb {
+  background: red !important;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 9px;
+  width: 11px;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  position: relative;
+  top: 3px;
+}
+.unrealized-progress .negative .progress-bar {
+  margin-left: -50%;
+  background-color: red;
+  margin-right: 50%;
+}
+.unrealized-progress .positive .progress-bar {
+  background-color: #00bd59;
+  margin-left: 50%;
+}
+.unrealized-progress .progress-bg {
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 50px;
+  height: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.unrealized-progress .progress-bg .positive {
+  background-color: #00bd59;
+  margin-left: 50%;
+  height: 8px;
+  position: absolute;
+}
+.unrealized-progress .progress-bg .negative {
+  background-color: red;
+  height: 8px;
+  position: absolute;
+}
+
+
+/* Responsive CSS */
+@media screen and (max-width: 900px) {
+  .stock-left-data.align-items-center {
+      flex-direction: column;
+      align-items: flex-start !important;
+  }
+  .stock-left-data .left-container {
+      width: 100%;
+      margin: 0 !important;
+      margin-bottom: 20px !important;
+  }
+  .stock-left-data .left-container div {
+      width: 50%;
+  }
+  .stock-left-data .left-container div:first-child {
+      width: 10%;
+  }
+  .stock-left-data .left-container div:nth-child(2) {
+      text-align: left !important;
+      width: 35%;
+  }
+  .stock-left-data .left-container .share-type {
+      flex-grow: 0 !important;
+  }
+  .stock-right-data {
+      width: 100%;
+  }
+  .stock-right-data.d-flex {
+      flex-direction: column;
+      align-items: flex-start !important;
+      margin: 0 !important;
+      gap: 20px;
+  }
+  .stock-right-data .stock-right-1,
+  .stock-right-data .stock-right-2,
+  .stock-right-data .stock-right-3,
+  .stock-right-data .stock-right-4 {
+      width: 100%;
+      justify-content: space-between;
+  }
+  .stock-right-data .stock-right-2 .small,
+  .stock-right-data .stock-right-3 .small  {
+      justify-content: space-between;
+  }
+  .stock-right-data .stock-right-4 {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 20px;
+  }
+  .stock-right-data .stock-right-4 button {
+      width: 50%;
+      margin: 0 !important;
+  }
+  .m-width-50 {
+      width: 50%;
+  }
+  .m-width-50.me-4 {
+      margin: 0 !important;
+  }
+}
